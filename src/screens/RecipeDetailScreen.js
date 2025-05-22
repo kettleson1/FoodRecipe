@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleFavorite } from "../redux/favoritesSlice";
 
 export default function RecipeDetailScreen(props) {
-  const { recipe } = props.route.params; // FIXED: Destructure properly
+  const recipe = props.route.params.recipe; // FIXED: Destructure properly
 
   const dispatch = useDispatch();
   const navigation = useNavigation();
