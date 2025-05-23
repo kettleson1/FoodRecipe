@@ -29,7 +29,7 @@ export default function MyRecipeScreen() {
   const handleAddrecipe = () => navigation.navigate("RecipesFormScreen");
 
   const handlerecipeClick = (recipe) => {
-    navigation.navigate("RecipesFormScreen", { recipeToEdit: recipe });
+    navigation.navigate("CustomRecipesScreen", { recipe });
   };
 
   const deleterecipe = async (index) => {
